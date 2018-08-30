@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Convo Ninja</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn+SC" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/bulma/css/bulma.css" />
+    <link rel="stylesheet" href="node_modules/botui/build/botui.min.css" />
+    <link rel="stylesheet" href="node_modules/botui/build/botui-theme-default.css" />
+
+    <style>
+        div.contact-frame {
+            background: #4a4a4a21;
+            width: 60%;
+            height: 50%;
+            border-radius: 8px;
+            font-size: 30px;
+            padding-top: 2%;
+            margin-left: 20%;
+            margin-top: 11%;
+        }
+
+        div.contact-buttons {
+            width: 100%;
+            height: 6%;
+            position: absolute;
+            left: 0px;
+            top: 60%;
+            background: white;
+        }
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/vue/latest/vue.min.js"></script>
+    <script src="node_modules/botui/build/botui.min.js"></script>
+    <script src="index.js"></script>
+
+</head>
+
+<body onload="init_bot(event);">
+
+    <section class="hero is-info">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title is-4">
+                    Convo Ninja
+                </h1>
+                <p class="subtitle is-6">
+                    Beautiful Engaging Conversations!
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <div class="container">
+                <div class="navbar-brand">
+                    <h1 class="title is-3">
+                        Convo Ninja
+                    </h1>
+                    <p class="subtitle is-6">
+                        Beautiful Engaging Conversations!
+                    </p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </nav> -->
+
+    <div class="columns">
+        <div class="column">
+            <!-- <div class="container is-fluid">
+                <div class="tile is-ancestor">
+                    <div class="tile is-4 is-parent"></div>
+                    <div class="tile is-4 is-parent">
+                        <div class="tile is-child box">
+                            <p class="title">One</p>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <div class="contact-frame">
+                <span style="font-family: 'Vollkorn SC'; color: #757373; padding-left: 25%">Convo Ninja</span>
+                <br>
+                <p style="font-size: 14px; font-weight: 300; padding: 5%">Convo Ninja is a fresh new take on brand engagement. It allows you to create a mashup of a conversation with
+                    a landing page, an event page, a contact-me page. Think of something else, that you wanna create? Get
+                    started!!
+                </p>
+                <span style="padding: 5%">
+                    <a href="#" class="button">
+                        <i class="fa fa-facebook-square"></i>
+                    </a>
+                    <a href="#" class="button">
+                        <i class="fa fa-twitter-square"></i>
+                    </a>
+                    <a href="#" class="button">
+                        <i class="fa fa-linkedin-square"></i>
+                    </a>
+                    <a href="#" class="button">
+                        <i class="fa fa-envelope"></i>
+                    </a>
+                </span>
+                <!-- <div class="contact-buttons"></div> -->
+            </div>
+        </div>
+        <hr style="width: 1px; height: 100%">
+        <div class="column">
+            <div class="botui-app-container" id="chat-bot">
+                <bot-ui></bot-ui>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

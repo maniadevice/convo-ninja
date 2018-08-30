@@ -1,0 +1,15 @@
+{
+  "name": "convo-ninja",
+  "version": "1.0.0",
+  "description": "ninjas helping build convos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "anees",
+  "license": "ISC",
+  "dependencies": {
+    "botui": "^0.3.4",
+    "bulma": "^0.6.1"
+  }
+}
